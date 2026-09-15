@@ -530,6 +530,11 @@ impl NexusViewer {
         &mut self.scene3d
     }
 
+    /// Accesses the window to configure application title, icon, and other settings.
+    pub fn window_mut(&mut self) -> &mut Window {
+        &mut self.window
+    }
+
     /// Sets the backdrop for an application-owned scene.
     pub fn set_background_color(&mut self, color: Color) {
         self.window.set_background_color(color);
